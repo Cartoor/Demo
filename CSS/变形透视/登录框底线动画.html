@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(236, 204, 104,1.0);
+        }
+
+        main {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(87, 96, 111,1.0);
+            transition: 1s;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            background-color: rgba(206, 214, 224,1.0);
+            
+        }
+
+        .field {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .field::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 1px;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to right, rgba(206, 214, 224,1.0), rgba(112, 161, 255,1.0), 
+            rgba(83, 82, 237,1.0), rgba(30, 144, 255,1.0), rgba(55, 66, 250,1.0), rgba(206, 214, 224,1.0));
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+
+        .field:hover::before {
+            transform: translateX(0%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="field">
+            <input type="text" placeholder="请输入账户...">
+        </div>
+        <div class="field">
+            <input type="text" placeholder="请输入密码...">
+        </div>    
+    </main>
+</body>
+</html>

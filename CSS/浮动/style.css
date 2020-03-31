@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#dad {
+  border: 4px solid blueviolet;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+#dad #son {
+  border-radius: 50%;
+  position: absolute;
+  background-color: pink;
+  top: 200px;
+  left: 200px;
+  right: 0px;
+  bottom: 0px;
+}

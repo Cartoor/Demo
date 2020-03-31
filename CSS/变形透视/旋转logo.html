@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f39c12;
+        }
+
+        div {
+            font-size: 3em;
+        }
+
+        
+        div span:first-child{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #f1c40f;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            transition: 1s;
+        }
+
+        div span:last-child{ 
+            display: inline-block;
+            transition: 1s;
+        }
+
+        div:hover span:first-child {
+            transform: rotate(360deg);
+        }
+
+        div:hover span:last-child {
+            transform: rotate(-360deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>S</span>e<span>ins</span>
+    </div>
+</body>
+</html>

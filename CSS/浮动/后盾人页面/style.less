@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+header {
+    background-color: #fff;
+    border-bottom: solid 2px rgb(12, 117, 109);
+    box-shadow: 0px 1px 5px rgba(165, 165, 165, 0.9);
+
+    nav {
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+        background-color: rgba(210, 183, 235, 0.527);
+
+        section {
+            &:nth-of-type(1) {
+                float: left;
+                margin: 10px;
+            }
+            &:nth-of-type(2) {
+                float: right;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    article {
+        height: 900px;
+        background-color: greenyellow;
+        float: left;
+        width: 900px;
+        box-sizing: border-box;
+    }
+    aside {
+        height: 300px;
+        width: 280px;
+        float:left;
+        border: solid 1px gray;
+        margin-left: 20px;
+        box-sizing: border-box;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    div {
+        height: 40px;
+    }
+}

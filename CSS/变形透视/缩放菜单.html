@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+        }
+
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        a {
+            text-decoration: none;
+            /* font-size: 2em; */
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            /* border-bottom: solid 1px silver; */
+        }
+
+        main ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li {
+            margin-right: 10px;
+        }
+
+        main ul strong {
+            padding: 5px 30px;
+            background-color: #2ed573;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        ul li div {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: #f1f2f6;
+            padding: 10px;
+            transition: .3s;
+            transform: scale(0);
+            z-index: -1;
+            transform-origin: center top;
+        }
+
+        ul li:hover div {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <ul>
+            <li>
+                <strong>video</strong>
+                <div>
+                    <a href="#">Seins</a>
+                    <a href="#">PHP</a>
+                </div>
+            </li>
+            <li>
+                <strong>live</strong>
+                <div>
+                    <a href="#">山雀</a>
+                    <a href="#">Linux</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
