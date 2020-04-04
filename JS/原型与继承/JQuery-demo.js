@@ -25,3 +25,15 @@ class JQuery {
     })
   }
 }
+
+// 扩展JQuery JQuery.prototype.xxx = function () {}
+JQuery.prototype.sayHi = function () {console.log("Hi");}
+
+// 复用 extensJQuery
+class myJQuery extends JQuery{
+  constructor() {
+    super(selector)
+  }
+
+  addClass() {}
+}
